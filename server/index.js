@@ -54,12 +54,12 @@ app.use('/todo', todo)
 app.use('/project', project)
 app.use('/discussion', discussion)
 app.use('/idea', idea)
-app.use(express.static("client/build"));
+app.use(express.static("Client/build"));
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static("client/build"));
+    app.use(express.static("Client/build"));
     app.get("*", (req,res) => {
-      res.sendFile(path.join(__dirname,"client","build", 'index.html'));
+      res.sendFile(path.join(__dirname,"Client","build", 'index.html'));
     })
 }
 
