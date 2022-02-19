@@ -66,10 +66,10 @@ const bcrypt= require('bcrypt')
 const { User }= require('../models')
 const jwt = require("jsonwebtoken");
 const joi = require("joi");
-let multer = require('multer'),
-    mongoose = require('mongoose'),
-    uuidv4 = require('uuid/v4'),
-    router = express.Router();
+const multer = require('multer');
+const mongoose = require('mongoose');
+//const {uuidv4} = require('uuidv4');
+ const router = express.Router();
 //mongoose.set('useFindAndModify', false);
 const register= express.Router()
 var idi;
